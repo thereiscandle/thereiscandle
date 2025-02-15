@@ -1,7 +1,6 @@
 <script>
-    if (DeviceMotionEvent && typeof DeviceMotionEvent.requestPermission === "function") {
-        DeviceMotionEvent.requestPermission();
-    }
+    DeviceMotionEvent.requestPermission();
+
   
     window.removeEventListener("deviceorientation", handleOrientation);
     function handleOrientation(event) {
